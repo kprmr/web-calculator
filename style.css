@@ -15,6 +15,15 @@ button {
     border-radius: 30px;
     font-size: 30px;
 }
+.clear {
+    background-color: red;
+}
+.right  .operators {
+    background-color: orange;
+}
+.equal {
+    background-color: yellow;
+}
 
 /* The single container inside the body (this contains all the elements of calculator) */
 .container {

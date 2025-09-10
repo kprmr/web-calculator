@@ -13,6 +13,32 @@ const clear = document.querySelector(".clear");
 //This is the expression which will be evaluated
 let expression = "";
 
+//This function will computer the expression
+function result(exp) {
+    if(exp.includes("*")) {
+        let newExp = exp.split("*");
+        res = newExp[0]*newExp[1];
+        return res;
+    }
+    else if(exp.includes("/")) {
+        let newExp = exp.split("/");
+        res = newExp[0]/newExp[1];
+        return res;
+    }
+    else if(exp.includes("-")) {
+        let newExp = exp.split("-");
+        res = newExp[0]-newExp[1];
+        return res;
+    }
+    else if(exp.includes("+")) {
+        let newExp = exp.split("+");
+        num1 = Number(newExp[0]);
+        num2 = Number(newExp[1]);
+        res = num1 + num2;
+        return res;
+    }
+}
+
 //Register click event
 buttons.forEach(button => {
     button.addEventListener('click', (e) => {
@@ -24,7 +50,8 @@ buttons.forEach(button => {
             expression = ""
         }
         else if (thing == "=") {
-            answer.innerHTML = `= ${expression}`
+            ans = result(expression)
+            answer.innerHTML = `= ${ans}`
         }
         else {
             expression = expression+thing;
