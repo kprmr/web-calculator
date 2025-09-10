@@ -10,12 +10,6 @@ const buttons = document.querySelectorAll("button");
 //This will select the clear button
 const clear = document.querySelector(".clear");
 
-// This will clear everything if clear is registered
-// clear.addEventListener('click', () => {
-//     question.innerHTML = "";
-//     answer.innerHTML = "";
-// })
-
 //This is the expression which will be evaluated
 let expression = "";
 
