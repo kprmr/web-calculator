@@ -40,6 +40,8 @@ button {
     background-color: white;
     text-align: right;
     font-size: 30px;
+    width: 287px;
+    height: 116px;
 }
 
 /* This if for keypad which contains left=numbers and right=operators */
