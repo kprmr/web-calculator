@@ -43,7 +43,6 @@ function result(exp) {
 buttons.forEach(button => {
     button.addEventListener('click', (e) => {
         let thing = e.target.innerHTML
-        console.log(thing)
         if (thing == "C") {
             question.innerHTML = "";
             answer.innerHTML = "";
