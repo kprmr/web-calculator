@@ -12,7 +12,6 @@ button {
     margin: 5px;
     padding: 20px;
     border: 2px solid black;
-    /* background-color: ; */
     border-radius: 30px;
     font-size: 30px;
 }
@@ -24,9 +23,7 @@ button {
     border: 2px solid black;
     border-radius: 30px;
     box-sizing: border-box;
-    /* background-color: rgb(161, 30, 171); */
     background-color: grey;
-    /* width: 800px; */
 }
 
 /* This is for screen which will display the number clicked and the result displayed */
